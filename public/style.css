@@ -1,0 +1,31 @@
+h1 {
+    color: maroon;
+    text-align: center;
+}
+
+.post {
+    background-color: blanchedalmond;
+}
+
+.user{
+    font-style :italic;
+    color: darkblue;
+}
+
+.delete-button {
+    background-color:rgb(219, 70, 70);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.delete-button:hover {
+    background-color: maroon;
+}
+
+#footer{
+    color: darkblue;
+}

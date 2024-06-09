@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Blog Page</h1>
+    <% for(posts of posts) { %>
+
+        <div class="post">
+            <h3 class="user">@<%= posts.username %></h3>
+            <h4 class="content"><%= posts.content %></h4>
+            <br>
+            <a href="http://localhost:8080/posts/<%=posts.id%>">See in detail</a>
+            <a href="http://localhost:8080/posts/<%=posts.id%>/edit">edit</a>
+            <br>
+            <br>
+             <form method="post" action="/posts/<%=posts.id%>?_method=DELETE">
+                <button class="delete-button">Delete post</button>
+             </form>
+            
+        </div>
+     <%}%>
+  
+     <br>
+     <br>
+     <a href="http://localhost:8080/posts/new" id="footer"> Create New Post</a>
+     <br>
+     <br>
+     <a href="#">&copy Prafull</a>
+</body>
+</html>
